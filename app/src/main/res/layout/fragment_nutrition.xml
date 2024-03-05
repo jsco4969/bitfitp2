@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/mealTypeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/meal_type"
+        android:minHeight="48dp"
+        android:autofillHints="food"
+        android:inputType="text"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/caloriesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="number"
+        android:hint="@string/calories_consumed"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_entry"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
